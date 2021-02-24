@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "************************"
+echo "*	ELiminar Carpetas    *"
+
+echo "************************"
+
+
+echo "Ingrese el nombre de la carpeta"
+read carpeta
+
+rmdir $HOME/Documents/$carpeta
+	echo "Carpeta eliminada con exito"
+
+;;
+
+*)
+	echo "opcion no valida"
+;;
+
+esac 
