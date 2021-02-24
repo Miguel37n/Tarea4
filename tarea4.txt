@@ -1,0 +1,54 @@
+#!/bin/bash
+
+echo "************************"
+echo "*		Menu	     *"
+echo "* 1.Crear una carpeta  *"
+echo "* 2.Eliminar carpeta   *"
+echo "* 3.Salir              *"
+echo "************************"
+
+echo "Elegir una opcion del menu:"
+read opcion
+
+clear 
+
+case $opcion in
+1)
+clear 
+echo "************************"
+echo "*   Crear una carpeta  *"
+echo "************************"
+
+echo "Ingrese el nombre de la carpeta"
+read carpeta
+
+mkdir $HOME/Ejer4/$carpeta
+	echo "Carpeta creada con exito"
+
+;;
+
+2)
+clear 
+echo "************************"
+echo "*   Eliminar  carpeta  *"
+echo "************************"
+
+echo "Ingrese el nombre de la carpeta"
+read carpeta
+
+rmdir $HOME/Ejer4/$carpeta
+	echo "Carpeta eliminada con exito"
+
+;;
+
+3)
+
+	salir
+
+;;
+
+*)
+	echo "opcion no valida"
+
+;;
+esac
